@@ -1,0 +1,44 @@
+.modal
+  h4
+    text-decoration: underline
+
+  p.light_info,
+  ul.light_info
+    font-size: 1.5em
+
+  .modal-dialog .modal-content .modal-body .row .dashLights
+    text-align: center
+
+    .light_icons
+      img
+        cursor: pointer
+        width: 50px
+        height: 40px
+
+        &:hover
+          outline: 1px solid red
+          @include transform(scale(1.5))
+
+  .lighting
+    img
+      width: 70px
+
+
+      #bmwLights,
+      #miniLights,
+      .light_info,
+      #bmwSelected,
+      #miniSelected
+        display: none
+
+      #bmwSelected,
+      #miniSelected
+        color: white
+
+  p.light_info,
+  ul.light_info
+    font-size: 1.5em
+
+  .modal-footer
+    text-align: center
+    font-size: 1.5em

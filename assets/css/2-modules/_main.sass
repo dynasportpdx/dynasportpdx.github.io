@@ -1,0 +1,122 @@
+main
+  position: relative
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5)
+  z-index: 1
+
+  section#about
+    min-height: 100vh
+
+    div.sectionRight
+      height: 100vh
+      background:
+        image: url(../img/dyna_mini.jpg)
+        repeat: no-repeat
+        position: center
+        size: cover
+      padding: 0
+
+    div.sectionLeft
+      min-height: 100vh
+      padding: 0
+
+      h2
+        font-family: $font
+
+      div#aboutUs,
+      div#performance
+        padding: 5%
+        margin: 0
+        min-height: 50vh
+
+      div#aboutUs
+        background-color: $white
+        color: $grey222
+
+      div#performance
+        background-color: $grey222
+
+  section#quotes
+    min-height: 30vh
+    background-color: $greyDDD
+    padding: 0
+    margin: 0
+
+    div#quotesContent
+      padding: 20px 0
+      color: $greyBlue
+      text-align: center
+      @include display(flex)
+      @include justify-content(center)
+      @include flex-direction(column)
+
+      h2
+        font-family: $font
+
+      #quote-carousel
+        .carousel-inner
+          // margin: 10px 0 0
+          border-top: 1px solid black
+
+          blockquote
+            border-left: none
+            margin: 0
+
+  div#instafeed img
+    width: 25%
+
+  section#contactForm
+    background:
+      image: url(../img/carbon-fiber.jpg)
+      repeat: no-repeat
+      size: cover
+    padding: 20px 0
+
+    div#contactContent
+      p
+        text-align: center
+        font-size: 2em
+
+        a
+          font-weight: bold
+          color: $beigeDark
+          line-height: 2em
+          font-size: 1.5em
+          text-align: center
+
+      address
+        font-size: 1.5em
+        font-weight: bold
+
+      #mapImg
+        margin: auto
+        width: 100%
+
+      #mapBtn
+        margin-top: 5px
+
+  section#links
+    div#linksContent
+      .topLinks
+        background-color: #111
+        padding-bottom: 30px
+
+        .linkTop_img
+          width: 100%
+          margin-top: 30px
+
+      .bottomLinks
+        background-color: $grey222
+        padding: 10px
+
+        .linkBottom_img
+          padding: 0.5em 0
+
+@media (max-width: 768px)
+  body main section#quotes
+    .quote
+      height: 110px
+
+@media (max-width: 667px)
+  body main section#quotes
+    .quote
+      height: 260px
