@@ -136,7 +136,7 @@ $(document).ready(function(){
 		swal({
 			title: "Sweet!",
 			text: "A DynaSport associate will be in touch with you soon!",
-			imageUrl: "images/sweetalert/thumbs-up.jpg",
+			imageUrl: "assets/img/sweetalert/thumbs-up.jpg",
 			allowEscapeKey: false,
 			confirmButtonColor: "#78c7ff"
 		},
