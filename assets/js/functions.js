@@ -107,7 +107,7 @@ $(document).ready(function(){
 	var userFeed = new Instafeed({
 		get: 'user',
 		userId: 1765479990,
-		accessToken: '1765479990.467ede5.5373d2910670417394cfeabb0a03fdcf',
+		// accessToken: '1765479990.467ede5.5373d2910670417394cfeabb0a03fdcf',
 		links: true,
 		sortBy: 'random',
 		resolution: 'standard_resolution',
