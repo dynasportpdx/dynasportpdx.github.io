@@ -106,7 +106,7 @@ $(document).ready(function(){
 // Instagram feed:
 	var userFeed = new Instafeed({
 		get: 'user',
-		userId: 1765479990,
+		userId: '1765479990',
 		accessToken: '1765479990.1677ed0.32ba95996d764c0287919e6588c83bff',
 		links: true,
 		sortBy: 'random',
