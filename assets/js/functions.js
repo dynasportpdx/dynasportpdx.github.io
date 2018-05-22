@@ -103,30 +103,7 @@ $(document).ready(function(){
 		interval: 15000
 	});
 
-// Instagram feed:
-	var userFeed = new Instafeed({
-		get: 'user',
-		userId: '1765479990',
-		accessToken: '1765479990.a31f4ad.d7caa3fa1dc74f20b62b853860fa8522',
-		links: true,
-		sortBy: 'random',
-		resolution: 'standard_resolution',
-		after: function(){
-			var images = $('#instafeed').find('img');
-			$(images.slice(4, images.length)).remove();
-			$.each(images, function(index, image){
-				var delay = (index * 75) + 'ms';
-				$(image).css('-webkit-animation-delay', delay);
-				$(image).css('-moz-animation-delay', delay);
-				$(image).css('-ms-animation-delay', delay);
-				$(image).css('-o-animation-delay', delay);
-				$(image).css('animation-delay', delay);
-				$(image).addClass('wow fadeInUp');
-			});
-		},
-		template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
-	});
-	userFeed.run();
+
 
 	if (window.location.hash === "#thanks") {
 		function redirect(){
@@ -150,6 +127,6 @@ $(document).ready(function(){
   }
 
 // Formspree anit-spam
-	$('#formspree').attr('action', 'http://formspree.io/' + 'cs' + '@' + 'dynasportllc' + '.' + 'com');
+	$('#formspree').attr('action', 'http://formspree.io/' + 'Dynasportpdx' + '@' + 'outlook' + '.' + 'com');
 
 });
